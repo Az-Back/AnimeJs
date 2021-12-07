@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Zen+Dots&display=swap');
+
+* 
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body 
+{
+  background-color: rgb(31, 31, 31);
+  font-family: 'Lora', serif;
+  text-align: center;
+}
+
+.Titre 
+{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  border: 2px solid black;
+  transform: scale(1);
+  animation: anim 1s linear;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes anim {
+  0% {
+    transform: scale(0);
+  }
+
+  25% {
+    transform: scale(0.2);
+  }
+
+  50% {
+    transform: scale(0.4);
+  }
+
+  75% {
+    transform: scale(0.6);
+  }
+
+  95% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.Titre1 
+{
+  color: red;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 25px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.Par 
+{
+  height: 250px;
+  width: 100%;
+  background-color: #555555;
+}
+
+.Par1 
+{
+  color: cyan;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  display: block; 
+  animation: anim1 2s linear infinite;
+}
+
+@keyframes anim1 
+{
+  0% {
+    border-image: linear-gradient(180deg, #e54c46, #45b175) 1;
+  }
+
+  25% {
+    border: 2px solid black;
+    border-image: linear-gradient(180deg, cyan, #a200ff) 1;
+  }
+
+  50% {
+    border: 2px solid black;
+    border-image: linear-gradient(180deg, rgb(255, 0, 0), #ffffff) 1;
+  }
+
+  75% {
+    border: 2px solid black;
+    border-image: linear-gradient(180deg, rgb(255, 0, 191), #000000) 1;
+  }
+
+  100% {
+    border: 2px solid black;
+    border-image: linear-gradient(180deg, #e54c46, #45b175) 1;
+  }
+}
+
+.Par2
+{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button 
+{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 4rem;
+  width: 10rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 5px black;
+  background-color: white;
+}
+
+.Titre2
+{
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.Titre3 
+{
+  color: red;
+  font-family: 50px;
+  text-align: center;
+  padding-top: 150px;
+  display: none;
+}
+
+.Titre4
+{
+  display: flex;
+  height: 200px;
+  width: 100%;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.Titre5 
+{
+  display: flex;
+  color: red;
+  font-family: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 500px;
+  display: inline-block;
+  transform: translateY(50px);
+  text-align: center;
+}
+.bar {
+  background: #FFFFFF;
+  width: 10px;
+  height: 100px;
+}
+.bar1 {
+  float: left;
+}
+.bar2 {
+  float: right;
+}
+.ball {
+  background: #FFFFFF;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 45px;
+  left: 10px;
+}
+
+.Titre6 {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.Titre7 
+{
+  display: flex;
+  color: red;
+  font-family: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.Titre8
+{
+  opacity: 1;
+  color: red;
+  font-family: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  animation: appear 1s linear;
+  background-color: black;
+}
+
+@keyframes appear 
+{
+  0%
+  {
+    opacity: 0;
+  }
+
+  100%
+  {
+    opacity: 0;
+  }
+}
+
+.Anim 
+{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  max-width: 18rem;
+  margin: auto;
+  text-align: center;
+}
+
+.Anim2 
+{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 8rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.blue 
+{
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5em;
+  background-color: cyan;
+}
+
+.green 
+{
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5em;
+  background-color: #0f4;
+}
+
+.yellow 
+{
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5em;
+  background-color: yellow;
+}
+
+.pink
+{
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5em;
+  background-color: pink;
+}
+
+.purple
+{
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5em;
+  background-color: purple;
+}
+
+.Espace 
+{
+  height: 100px;
+  background-color: rgb(31, 31, 31);
+  width: 100%;
+}
+
+.Espace h2 
+{
+  color: red;
+  font-family: 40px;
+}
+
+#root {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrapper1 {
+  overflow: hidden;
+  display: none;
+  width: 320px;
+}
+
+#text {
+  padding: 0.5em 1em;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  color: #0f4;
+}
+
+#button1 {
+  padding: 0.3em 0.6em;
+  border: 1px solid #0f4;
+  margin-top: 1em;
+  border-radius: 2px;
+  color: #0f4;
+  cursor: pointer;
+}
+
+.Part 
+{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#button3 {
+  width: 50%;
+  padding: 0.3em 0.6em;
+  border: 1px solid white;
+  margin-top: 1em;
+  border-radius: 2px;
+  color: red;
+  cursor: pointer;
+}
+
+#button4 {
+  width: 50%;
+  padding: 0.3em 0.6em;
+  border: 1px solid white;
+  margin-top: 1em;
+  border-radius: 2px;
+  color: red;
+  cursor: pointer;
+}
